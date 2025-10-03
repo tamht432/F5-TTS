@@ -11,6 +11,7 @@ base_cmd = [
     "f5-tts_infer-cli",
     "--model", "F5TTS_v1_Base",
     "--ref_audio", "/content/F5-TTS/1003.WAV",
+    "--speed", "0.9",
     "--ref_text", "I was never meant to know what it feels like to be prey, not in this manner not as something to be savored"
 ]
 
@@ -24,3 +25,4 @@ for chunk in chunks:
 
     print(f"Running chunk {chunk_id} -> {output_file}")
     subprocess.run(cmd, check=True)
+
